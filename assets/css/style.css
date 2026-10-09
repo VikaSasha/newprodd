@@ -171,11 +171,13 @@ h1, h2, h3, h4 { margin: 0; font-weight: 500; }
 .hero__title span + span { margin-left: 3.4cqw; }
 .hero__title2 { right: 2.0cqw; top: 31.2cqw; text-align: right; }
 .hero__title2 span:first-child { margin-right: 3.25cqw; }
-.hero__text {
-  position: absolute; left: 1.6cqw; top: 33.6cqw; width: 30cqw;
-  font-size: max(14px, 0.9cqw); line-height: 1.2; color: #fff;
+.hero__lead {
+  position: absolute; left: 1.6cqw; top: 33.6cqw; width: max(30cqw, 360px);
+  display: flex; flex-direction: column; align-items: flex-start; gap: max(14px, .9cqw);
 }
-.hero__btn { position: absolute; left: 1.6cqw; top: 39.95cqw; width: 10.4cqw; min-width: 150px; height: max(40px, 2.45cqw); font-size: max(14px, .84cqw); }
+.hero__text { margin: 0; font-size: max(14px, 0.9cqw); line-height: 1.2; color: #fff; text-shadow: 0 1px 8px rgba(190, 90, 30, .35); }
+.hero__btn { width: 10.4cqw; min-width: 150px; height: max(40px, 2.45cqw); font-size: max(14px, .84cqw); }
+@container (max-width: 1500px) { .hero__text br { display: none; } }
 
 /* блок «Специализируемся» */
 .intro { padding-top: max(40px, calc(58 * var(--k))); }
@@ -513,12 +515,13 @@ textarea.field { grid-column: 1 / -1; height: max(90px, calc(95 * var(--k))); pa
 
   .hero { aspect-ratio: auto; min-height: 0; height: auto; max-height: none; background: linear-gradient(160deg, #F7A350 0%, #F38949 45%, #FBC65A 100%); }
   .hero__inner { position: relative; padding: 96px var(--pad) 0; display: flex; flex-direction: column; }
-  .hero__title, .hero__title2, .hero__text, .hero__btn { position: static; }
+  .hero__title, .hero__title2, .hero__lead { position: static; }
+  .hero__lead { width: auto; gap: 20px; }
   .hero__title { font-size: clamp(48px, 13vw, 96px); text-shadow: none; }
   .hero__title span + span { margin-left: .45em; }
   .hero__text { width: min(520px, 100%); margin-top: 18px; font-size: 15px; line-height: 1.35; }
   .hero__text br { display: none; }
-  .hero__btn { margin-top: 20px; width: auto; height: 46px; font-size: 15px; align-self: flex-start; }
+  .hero__btn { width: auto; height: 46px; font-size: 15px; }
   .hero__pic {
     display: block; margin-top: 28px; align-self: center; width: min(100% + 2 * var(--pad), 560px); aspect-ratio: 4 / 4.4;
     background: url("../img/hero.jpg") 50% 100% / cover no-repeat;
