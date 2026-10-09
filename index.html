@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Новые продукты</title>
+  <meta name="description" content="ООО «Новые продукты» — производитель полезных продуктов из зерна уральских производителей: супы-пюре Street Lunch, Рисомишки, батончики Хрумстик.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home" data-header="over">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Первый экран -->
+    <section class="hero" aria-label="Полезные продукты для всей семьи">
+      <div class="hero__inner">
+        <h1 class="hero__title"><span>Полезные</span><span>продукты</span></h1>
+        <p class="hero__text">Наши продукты помогают заменить импортные снеки <br>на качественные изделия из зёрна местного уральского <br>производителя. Мы выступаем за здоровую альтернативу <br>привычным продуктам <br>быстрого питания.</p>
+        <a class="btn btn--green hero__btn" href="products.html">В каталог</a>
+        <div class="hero__pic" aria-hidden="true"></div>
+        <p class="hero__title2" aria-hidden="true"><span>Для всей</span><span>семьи</span></p>
+      </div>
+    </section>
+
+    <!-- Специализация и цифры -->
+    <section class="intro container">
+      <h2 class="h2 reveal">Специализируемся на производстве полезных <br class="br-desk">продуктов для современного ритма жизни</h2>
+      <div class="stats reveal">
+        <div class="stat stat--orange">
+          <div class="stat__num">35</div>
+          <div class="stat__label">Регионов по России</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">562+</div>
+          <div class="stat__label">Постоянных клиентов</div>
+        </div>
+        <div class="stat stat--wide">
+          <div class="stat__num">10000+</div>
+          <div class="stat__label">Реализованной продукции в день</div>
+        </div>
+        <div class="stats__photo">
+          <img src="assets/img/stats-risomishki.jpg" alt="Рисомишки в молочном шоколаде на кухонном столе" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Ассортимент -->
+    <section class="assort" aria-labelledby="assort-title">
+      <div class="assort__arch">
+        <div class="container">
+          <h2 class="h2 assort__title reveal" id="assort-title">Делаем правильное питание <br class="br-desk">доступным для каждого, предлагая <br class="br-desk">широкий ассортимент продукции</h2>
+        </div>
+        <div class="slider" data-slider>
+          <div class="slider__track" data-track>
+            <a class="pcard" href="products.html">
+              <div class="pcard__img"><img src="assets/img/cat-risomishki.jpg" alt="Рисомишки — мишки из воздушного риса в шоколаде" loading="lazy" style="object-position: 50% 62%"></div>
+              <h3 class="h3 pcard__title">Мишки из воздушного риса<br>в шоколаде</h3>
+            </a>
+            <a class="pcard" href="products.html">
+              <div class="pcard__img"><img src="assets/img/cat-cup.jpg" alt="Суп-пюре Street Lunch в стакане" loading="lazy"></div>
+              <h3 class="h3 pcard__title">Суп-пюре в стакане</h3>
+            </a>
+            <a class="pcard" href="catalog.html">
+              <div class="pcard__img"><img src="assets/img/cat-packet.jpg" alt="Суп-пюре Street Lunch в порционном пакетике" loading="lazy"></div>
+              <h3 class="h3 pcard__title">Суп-пюре в порционных пакетиках</h3>
+            </a>
+            <a class="pcard" href="products.html">
+              <div class="pcard__img" style="background:#F3F3F3"><img src="assets/img/prod-hrumstik.jpg" alt="Злаковые батончики Хрумстик" loading="lazy" style="object-fit: contain"></div>
+              <h3 class="h3 pcard__title">Злаковые батончики Хрумстик</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контроль качества -->
+    <section class="quality container" aria-labelledby="quality-title">
+      <div class="section-head reveal">
+        <h2 class="h2 nowrap-desk" id="quality-title">Придерживаемся строгих <br class="br-mob">принципов<br><span class="c-orange">контроля качества</span></h2>
+        <p class="section-head__note">Мы заботимся о здоровье наших потребителей. Поэтому качество продукции стоит на первом месте.</p>
+      </div>
+      <div class="qgrid reveal">
+        <div class="qcard qcard--photo"><img src="assets/img/q-worker.jpg" alt="Технолог на производстве" loading="lazy"></div>
+        <div class="qcard qcard--orange">
+          <h3 class="h3 qcard__title">Отбор сырья</h3>
+          <p class="qcard__text">Работаем с проверенными поставщиками уральского зёрна.<br>Каждая партия проходит многоступенчатую проверку в лаборатории.</p>
+        </div>
+        <div class="qcard qcard--photo"><img src="assets/img/q-box.jpg" alt="Суп-пюре Street Lunch в упаковке" loading="lazy" style="object-position: 40% 55%"></div>
+        <div class="qcard qcard--yellow">
+          <h3 class="h3 qcard__title">Новые технологии производства</h3>
+          <p class="qcard__text">Используем бережную обработку зёрна с сохранением всех полезных свойств. Проводим технологический контроль на каждом этапе изготовления.</p>
+        </div>
+        <div class="qcard qcard--photo"><img src="assets/img/q-grain.jpg" alt="Отборное зерно" loading="lazy"></div>
+        <div class="qcard qcard--green">
+          <h3 class="h3 qcard__title">Честность и прозрачность</h3>
+          <p class="qcard__text">Проводим регулярные аудиты производства.<br>Предоставляем полную информацию о составе на упаковке.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="news-section container" aria-labelledby="news-title">
+      <div class="section-head section-head--center reveal">
+        <h2 class="h2" id="news-title">Новости компании</h2>
+        <a class="btn btn--yellow btn--sm" href="news.html">Смотреть больше</a>
+      </div>
+      <div class="news-grid reveal">
+        <a class="ncard" href="news-item.html">
+          <div class="ncard__img"><img src="assets/img/news-1.jpg" alt="Рисомишки на полке магазина «Жизнь март»" loading="lazy"></div>
+          <div class="ncard__date">11.05.2025</div>
+          <div class="ncard__title">Рисомишки в сети «Жизньмарт»</div>
+        </a>
+        <a class="ncard" href="news-item.html">
+          <div class="ncard__img"><img src="assets/img/news-1.jpg" alt="Рисомишки на полке магазина «Жизнь март»" loading="lazy"></div>
+          <div class="ncard__date">11.05.2025</div>
+          <div class="ncard__title">Рисомишки в сети «Жизньмарт»</div>
+        </a>
+        <a class="ncard" href="news-item.html">
+          <div class="ncard__img"><img src="assets/img/news-1.jpg" alt="Рисомишки на полке магазина «Жизнь март»" loading="lazy"></div>
+          <div class="ncard__date">11.05.2025</div>
+          <div class="ncard__title">Рисомишки в сети «Жизньмарт»</div>
+        </a>
+        <a class="ncard" href="news-item.html">
+          <div class="ncard__img"><img src="assets/img/news-1.jpg" alt="Рисомишки на полке магазина «Жизнь март»" loading="lazy"></div>
+          <div class="ncard__date">11.05.2025</div>
+          <div class="ncard__title">Рисомишки в сети «Жизньмарт»</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Обратная связь -->
+    <section class="feedback container" aria-labelledby="fb-title">
+      <div class="feedback__grid reveal">
+        <div>
+          <h2 class="h2" id="fb-title">Остались вопросы?</h2>
+          <p class="feedback__lead">Свяжитесь с нами, мы проконсультируем вас<br>и ответим на все вопросы</p>
+        </div>
+        <form class="form" data-feedback novalidate>
+          <input class="field" type="text" name="name" placeholder="Имя" autocomplete="name" required aria-label="Имя">
+          <input class="field" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" required aria-label="Телефон">
+          <input class="field" type="email" name="email" placeholder="Электронная почта" autocomplete="email" aria-label="Электронная почта">
+          <textarea class="field" name="question" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span class="consent__box"></span>
+            <span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="#" data-policy>политикой обработки персональных данных</a></span>
+          </label>
+          <button class="btn btn--yellow form__submit" type="submit">Отправить</button>
+          <p class="form__msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

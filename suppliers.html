@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поставщикам — Новые продукты</title>
+  <meta name="description" content="Производство продукции под частной маркой. Станьте поставщиком компании «Новые продукты».">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="suppliers">
+  <div id="site-header"></div>
+
+  <main>
+    <div class="container page-top">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><span>Поставщикам</span></nav>
+      <h1 class="h1 page-title">Поставщикам</h1>
+      <p class="suppliers-text">Для Частной Марки можем изготовить продукцию с названиями: «Бобснэк», «Бобосы», «Бобосики», «БобЧемпион», «ВкусНяка», «Нашакаша», «Сландия», «Умстик», «Umstik», «Фрустик», «Фруктозик», «Fruktozik», «Хрусти и Расти», «Хрумбургер», «Хорошоу», «ХрумСнэк», «Чунга-Чанга».</p>
+    </div>
+
+    <section class="feedback feedback--supply container" aria-labelledby="fb-title">
+      <div class="feedback__grid reveal">
+        <div>
+          <h2 class="h2 h-form" id="fb-title">Хотите стать нашим поставщиком?</h2>
+          <p class="feedback__lead">Свяжитесь с нами, мы проконсультируем вас<br>и ответим на все вопросы</p>
+        </div>
+        <form class="form" data-feedback novalidate>
+          <input class="field" type="text" name="name" placeholder="Имя" autocomplete="name" required aria-label="Имя">
+          <input class="field" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" required aria-label="Телефон">
+          <input class="field" type="email" name="email" placeholder="Электронная почта" autocomplete="email" aria-label="Электронная почта">
+          <textarea class="field" name="question" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span class="consent__box"></span>
+            <span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="#" data-policy>политикой обработки персональных данных</a></span>
+          </label>
+          <button class="btn btn--yellow form__submit" type="submit">Отправить</button>
+          <p class="form__msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
